@@ -28593,6 +28593,49 @@
     "url": "cqgas.cn",
     "lang": "zh-CN"
   },
+  "cqu": {
+    "routes": {
+      "/jwc/:path{.+}?": {
+        "path": "/jwc/:path{.+}?",
+        "categories": [
+          "university"
+        ],
+        "example": "/cqu/jwc/index/tzgg",
+        "parameters": {
+          "path": {
+            "description": "路径参数，默认为 `index/tzgg`",
+            "default": "index/tzgg"
+          }
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "jwc.cqu.edu.cn/:path"
+            ],
+            "target": "/jwc/:path"
+          }
+        ],
+        "name": "本科教学信息网通知",
+        "maintainers": [
+          "AhsokaTano26"
+        ],
+        "location": "index.ts",
+        "module": "() => import('@/routes/cqu/index.ts')"
+      }
+    },
+    "name": "重庆大学",
+    "apiRoutes": {},
+    "url": "cqu.edu.cn",
+    "lang": "zh-CN"
+  },
   "cqwu": {
     "routes": {
       "/news/:type?": {
