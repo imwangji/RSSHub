@@ -29474,6 +29474,49 @@ export default {
     "url": "www.ctbu.edu.cn/",
     "lang": "zh-CN"
   },
+  "ctinews": {
+    "routes": {
+      "/topic/:topic?": {
+        "path": "/topic/:topic?",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/ctinews/topic/KDdek5vgXx",
+        "parameters": {
+          "topic": "話題 ID，可在 URL 中獲取，留空為 `KDdek5vgXx`"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "ctinews.com/news/topics/:topic",
+              "ctinews.com"
+            ]
+          }
+        ],
+        "name": "話題",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "url": "ctinews.com",
+        "location": "topic.ts",
+        "module": () => import('@/routes/ctinews/topic.ts')
+      }
+    },
+    "name": "中天新聞網",
+    "url": "ctinews.com",
+    "categories": [
+      "new-media"
+    ],
+    "lang": "zh-TW"
+  },
   "cts": {
     "routes": {
       "/:category": {
