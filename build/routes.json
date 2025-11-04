@@ -16337,106 +16337,97 @@
         "location": "popular.ts",
         "module": "() => import('@/routes/bilibili/popular.ts')"
       },
-      "/ranking/:rid_index?/:embed?/:redirect1?/:redirect2?": {
-        "path": "/ranking/:rid_index?/:embed?/:redirect1?/:redirect2?",
+      "/ranking/:rid?/:embed?/:redirect1?/:redirect2?": {
+        "path": "/ranking/:rid?/:embed?/:redirect1?/:redirect2?",
         "name": "排行榜",
         "maintainers": [
           "DIYgod",
           "hyoban"
         ],
         "categories": [
-          "social-media",
-          "popular"
+          "social-media"
         ],
         "view": 3,
-        "example": "/bilibili/ranking/0",
+        "example": "/bilibili/ranking/all",
         "parameters": {
-          "rid_index": {
-            "description": "排行榜分区 id 序号",
-            "default": "0",
+          "rid": {
+            "description": "排行榜分区代号或 rid，可在 URL 中找到",
+            "default": "all",
             "options": [
               {
-                "value": "0",
+                "value": "all",
                 "label": "全站"
               },
               {
-                "value": "3",
-                "label": "国创相关"
-              },
-              {
-                "value": "5",
-                "label": "动画"
-              },
-              {
-                "value": "6",
-                "label": "音乐"
-              },
-              {
-                "value": "7",
-                "label": "舞蹈"
-              },
-              {
-                "value": "8",
-                "label": "游戏"
-              },
-              {
-                "value": "9",
-                "label": "知识"
-              },
-              {
-                "value": "10",
-                "label": "科技"
-              },
-              {
-                "value": "11",
-                "label": "运动"
-              },
-              {
-                "value": "12",
-                "label": "汽车"
-              },
-              {
-                "value": "13",
-                "label": "生活"
-              },
-              {
-                "value": "14",
-                "label": "美食"
-              },
-              {
-                "value": "15",
-                "label": "动物圈"
-              },
-              {
-                "value": "16",
-                "label": "鬼畜"
-              },
-              {
-                "value": "17",
-                "label": "时尚"
-              },
-              {
-                "value": "18",
-                "label": "娱乐"
-              },
-              {
-                "value": "19",
+                "value": "cinephile",
                 "label": "影视"
               },
               {
-                "value": "23",
-                "label": "原创"
+                "value": "ent",
+                "label": "娱乐"
               },
               {
-                "value": "24",
-                "label": "新人"
+                "value": "music",
+                "label": "音乐"
+              },
+              {
+                "value": "dance",
+                "label": "舞蹈"
+              },
+              {
+                "value": "douga",
+                "label": "动画"
+              },
+              {
+                "value": "kichiku",
+                "label": "鬼畜"
+              },
+              {
+                "value": "game",
+                "label": "游戏"
+              },
+              {
+                "value": "knowledge",
+                "label": "知识"
+              },
+              {
+                "value": "tech",
+                "label": "科技数码"
+              },
+              {
+                "value": "car",
+                "label": "汽车"
+              },
+              {
+                "value": "fashion",
+                "label": "时尚美妆"
+              },
+              {
+                "value": "sports",
+                "label": "体育运动"
+              },
+              {
+                "value": "food",
+                "label": "美食"
+              },
+              {
+                "value": "animal",
+                "label": "动物"
               }
             ]
           },
-          "embed": "默认为开启内嵌视频, 任意值为关闭",
+          "embed": "默认为开启内嵌视频，任意值为关闭",
           "redirect1": "留空，用于兼容之前的路由",
           "redirect2": "留空，用于兼容之前的路由"
         },
+        "radar": [
+          {
+            "source": [
+              "www.bilibili.com/v/popular/rank/:rid"
+            ],
+            "target": "/ranking/:rid"
+          }
+        ],
         "location": "ranking.ts",
         "module": "() => import('@/routes/bilibili/ranking.ts')"
       },
