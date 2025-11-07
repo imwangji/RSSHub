@@ -27377,6 +27377,169 @@ export default {
     "url": "navi.cctv.com",
     "lang": "zh-CN"
   },
+  "cnu": {
+    "routes": {
+      "/iec": {
+        "path": "/iec",
+        "categories": [
+          "university"
+        ],
+        "example": "/cnu/iec",
+        "parameters": {},
+        "radar": [
+          {
+            "source": [
+              "iec.cnu.edu.cn/ggml/tzgg1/index.htm"
+            ],
+            "target": "/cnu/iec"
+          }
+        ],
+        "name": "信息工程学院通知公告",
+        "maintainers": [
+          "liueic"
+        ],
+        "url": "iec.cnu.edu.cn/ggml/tzgg1/index.htm",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "iec.ts",
+        "module": () => import('@/routes/cnu/iec.ts')
+      },
+      "/jdxw": {
+        "path": "/jdxw",
+        "categories": [
+          "university"
+        ],
+        "example": "/cnu/jdxw",
+        "parameters": {},
+        "radar": [
+          {
+            "source": [
+              "news.cnu.edu.cn/xysx/jdxw/index.htm"
+            ],
+            "target": "/cnu/jdxw"
+          }
+        ],
+        "name": "焦点关注",
+        "maintainers": [
+          "liueic"
+        ],
+        "url": "news.cnu.edu.cn/xysx/jdxw/index.htm",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "jdxw.ts",
+        "module": () => import('@/routes/cnu/jdxw.ts')
+      },
+      "/jwc": {
+        "path": "/jwc",
+        "categories": [
+          "university"
+        ],
+        "example": "/cnu/jwc",
+        "parameters": {},
+        "radar": [
+          {
+            "source": [
+              "jwc.cnu.edu.cn/tzgg/index.htm"
+            ],
+            "target": "/cnu/jwc"
+          }
+        ],
+        "name": "教务处通知公示",
+        "maintainers": [
+          "liueic"
+        ],
+        "url": "jwc.cnu.edu.cn/tzgg/index.htm",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "jwc.ts",
+        "module": () => import('@/routes/cnu/jwc.ts')
+      },
+      "/physics": {
+        "path": "/physics",
+        "categories": [
+          "university"
+        ],
+        "example": "/cnu/physics",
+        "parameters": {},
+        "radar": [
+          {
+            "source": [
+              "physics.cnu.edu.cn/news/index.htm"
+            ],
+            "target": "/cnu/physics"
+          }
+        ],
+        "name": "物理系院系新闻",
+        "maintainers": [
+          "liueic"
+        ],
+        "url": "physics.cnu.edu.cn/news/index.htm",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "physics.ts",
+        "module": () => import('@/routes/cnu/physics.ts')
+      },
+      "/smkxxy": {
+        "path": "/smkxxy",
+        "categories": [
+          "university"
+        ],
+        "example": "/cnu/smkxxy",
+        "parameters": {},
+        "radar": [
+          {
+            "source": [
+              "smkxxy.cnu.edu.cn/tzgg3/index.htm"
+            ],
+            "target": "/cnu/smkxxy"
+          }
+        ],
+        "name": "生命科学学院通知公告",
+        "maintainers": [
+          "liueic"
+        ],
+        "url": "smkxxy.cnu.edu.cn/tzgg3/index.htm",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "smkxxy.ts",
+        "module": () => import('@/routes/cnu/smkxxy.ts')
+      }
+    },
+    "name": "首都师范大学",
+    "apiRoutes": {},
+    "url": "cnu.edu.cn",
+    "lang": "zh-CN"
+  },
   "cockroachlabs": {
     "routes": {
       "/blog/:category?": {
