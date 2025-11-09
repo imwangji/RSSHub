@@ -81806,6 +81806,175 @@ export default {
     "url": "netflav.com",
     "lang": "en"
   },
+  "netflix": {
+    "routes": {
+      "/newsroom/:category?/:region?": {
+        "path": "/newsroom/:category?/:region?",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/netflix/newsroom",
+        "parameters": {
+          "category": {
+            "description": "Category",
+            "default": "all",
+            "options": [
+              {
+                "value": "all",
+                "label": "All News"
+              },
+              {
+                "value": "business",
+                "label": "Business"
+              },
+              {
+                "value": "entertainment",
+                "label": "Entertainment"
+              },
+              {
+                "value": "product",
+                "label": "Product"
+              },
+              {
+                "value": "impact",
+                "label": "Social Impact"
+              }
+            ]
+          },
+          "region": {
+            "description": "Region, can be found in the region URL",
+            "default": "en",
+            "options": [
+              {
+                "value": "ar",
+                "label": "اللغة العربية"
+              },
+              {
+                "value": "de",
+                "label": "Deutsch"
+              },
+              {
+                "value": "el",
+                "label": "Ελληνικά"
+              },
+              {
+                "value": "en",
+                "label": "English"
+              },
+              {
+                "value": "es",
+                "label": "Español (LatAm)"
+              },
+              {
+                "value": "es-es",
+                "label": "Español (España)"
+              },
+              {
+                "value": "fr",
+                "label": "Français"
+              },
+              {
+                "value": "id",
+                "label": "Bahasa Indonesia"
+              },
+              {
+                "value": "it",
+                "label": "Italiano"
+              },
+              {
+                "value": "ja",
+                "label": "日本語"
+              },
+              {
+                "value": "ko",
+                "label": "한국어"
+              },
+              {
+                "value": "pl",
+                "label": "Polski"
+              },
+              {
+                "value": "pt-br",
+                "label": "Português (Brasil)"
+              },
+              {
+                "value": "pt-pt",
+                "label": "Português (Portugal)"
+              },
+              {
+                "value": "ro",
+                "label": "Română"
+              },
+              {
+                "value": "ru",
+                "label": "русский"
+              },
+              {
+                "value": "th",
+                "label": "ไทย"
+              },
+              {
+                "value": "tr",
+                "label": "Türkçe"
+              },
+              {
+                "value": "vi",
+                "label": "Tiếng Việt"
+              },
+              {
+                "value": "zh-hans",
+                "label": "简体中文"
+              },
+              {
+                "value": "zh-hant",
+                "label": "繁體中文"
+              }
+            ]
+          }
+        },
+        "radar": [
+          {
+            "source": [
+              "about.netflix.com/:region/newsroom",
+              "netflix.com"
+            ]
+          }
+        ],
+        "name": "Newsroom",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "url": "about.netflix.com/",
+        "location": "newsroom.ts",
+        "module": () => import('@/routes/netflix/newsroom.ts')
+      },
+      "/research": {
+        "path": "/research",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/netflix/research",
+        "radar": [
+          {
+            "source": [
+              "research.netflix.com/archive",
+              "research.netflix.com"
+            ]
+          }
+        ],
+        "name": "Research",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "url": "research.netflix.com/",
+        "location": "research.ts",
+        "module": () => import('@/routes/netflix/research.ts')
+      }
+    },
+    "name": "Netflix",
+    "url": "netflix.com",
+    "lang": "en"
+  },
   "neu": {
     "routes": {
       "/bmie/:type": {
